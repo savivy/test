@@ -2,6 +2,7 @@
   <div id="app">
     <h1>ni</h1>
     <h2>AA</h2>
+    <h5>rrr</h5>
     <router-view/>
   </div>
 </template>
