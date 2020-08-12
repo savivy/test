@@ -1,6 +1,7 @@
 <template>
   <div id="app">
-    <h1></h1>
+    <h1>ni</h1>
+    <h2>AA</h2>
     <router-view/>
   </div>
 </template>
