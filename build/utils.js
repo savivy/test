@@ -53,7 +53,11 @@ exports.cssLoaders = function (options) {
       return ['vue-style-loader'].concat(loaders)
     }
   }
-
+var stylusOption={
+  import: [ 
+       path.join(__dirname,"../src/style/base.styl")
+  ] 
+}
   // https://vue-loader.vuejs.org/en/configurations/extract-css.html
   return {
     css: generateLoaders(),
@@ -61,8 +65,8 @@ exports.cssLoaders = function (options) {
     less: generateLoaders('less'),
     sass: generateLoaders('sass', { indentedSyntax: true }),
     scss: generateLoaders('sass'),
-    stylus: generateLoaders('stylus'),
-    styl: generateLoaders('stylus')
+    stylus: generateLoaders('stylus',stylusOption),
+    styl: generateLoaders('stylus',stylusOption)
   }
 }
 
