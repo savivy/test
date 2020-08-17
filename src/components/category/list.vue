@@ -14,7 +14,7 @@
     props: ["secondCate"],
     methods: {
       goGoods(item) {
-        console.log(item)
+        // console.log(item)
         this.$router.push("/home/index?id=" + item.id)
       }
     },

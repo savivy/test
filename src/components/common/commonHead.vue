@@ -1,7 +1,7 @@
 <template>
 
   <header>
-    <i class='iconfont icon-zuo'></i>
+    <i class='iconfont icon-zuo' @click="back"></i>
     <slot></slot>
     <i class="iconfont icon-19"></i>
   </header>
@@ -9,7 +9,11 @@
 
 <script>
   export default {
-
+				methods:{
+					back(){
+						 this.$router.go(-1) 
+					}
+				}
   }
 </script>
 
